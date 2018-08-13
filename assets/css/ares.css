@@ -1,0 +1,62 @@
+.navbar-header > a > img{
+	max-height: 50px;
+	display: inline-block;
+}
+.navbar-header > a > span{
+	text-transform: uppercase;
+	color: #fff;
+	margin-left: 15px;
+}
+
+.slider-area.home-10 {
+    background-image: url(../img/businessman-3210932_1920.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.video-area {
+    background: rgba(0, 0, 0, 0) url(../img/slider/businessman.jpg) no-repeat scroll center center / cover;
+}
+
+.main-slider.owl-carousel.owl-theme .owl-controls .owl-nav div.owl-prev, .main-slider.owl-carousel.owl-theme .owl-controls .owl-nav div.owl-next{
+	font-size: 9rem;
+    height: 9rem;
+    background-image: none;
+}
+
+.slide-principal{
+	font-size: 9vw;
+	margin-top:150px;
+	line-height: 70px;
+    text-align: center;
+
+}
+
+.title5-principal {
+    margin-top: 50px;
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 90px;
+}
+
+
+@media screen(min-width: 768px) {
+
+	.slide-principal {
+	    margin-top: 250px;
+	}
+	
+}
+
+
+@media screen(min-width: 998px) {
+
+	
+}
+
+
+@media screen(min-width: 1200px) {
+
+}

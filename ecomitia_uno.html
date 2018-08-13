@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ES">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Gestión de votaciones online">
+    <meta name="author" content="Ares S.Coop">
+    <title>Ares - ECOMITIA</title>
+
+    <!-- Bootstrap -->
+<link href="https://votacio.xarxatreball.cat/assets/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://votacio.xarxatreball.cat/assets/font-awesome-4.7.0/css/font-awesome.min.css">
+<link href="https://votacio.xarxatreball.cat/assets/css/secore.css" rel="stylesheet">
+<script src="https://votacio.xarxatreball.cat/assets/js/jquery-1.12.4.min.js"></script>
+<script src="https://votacio.xarxatreball.cat/assets/js/jquery-ui.js"></script>
+<script src="https://votacio.xarxatreball.cat/assets/css/bootstrap.min.css"></script>
+<script src="https://votacio.xarxatreball.cat/assets/js/secore.js"></script>
+<script type="text/javascript" src="https://votacio.xarxatreball.cat/assets/js/funcionescomun.js"></script>
+</head><body>
+
+    <div id="contenedor" class="container principal-sidebar">
+        <!-- cabecera -->
+        <header id="cabecera">
+    <nav id="navegacion_idioma" class="navbar navbar-default" role="navigation">
+
+      <!-- seleccion de idioma -->             
+        <div class="navbar-header">          
+          <a class="navbar-brand" href="#"><img src="assets/img/logo/ecomitia.png" class="img-responsive"></a>
+
+        </div>
+
+        <div class="btn-group btn-group-sm pull-right hidden-xs" role="group" aria-label="...">
+          <a class="btn  btn-default seleccion_idioma"><strong>Seleccione idioma</strong></a>
+                    <a href="/index.php?id_idioma=1" class="btn btn-default">Español</a>
+                   <a href="/index.php?id_idioma=2" class="btn btn-default">Catalán</a>
+                  
+          
+        </div>
+        <div class="navbar-header margin-top6xs">
+          <div class="btn-group" role="group" aria-label="...">      
+            <button type="button" class="navbar-toggle btn btn-default">Ares - ECOMITIA</button>
+            <!-- boton toggle menu-->
+            <button type="button" class="navbar-toggle btn btn-default toggle_sidebar" data-toggle="collapse" data-target="#navegador-collapse">
+              <span class="sr-only">Toggle navigation</span><i class="fa fa-bars" aria-hidden="true"></i> Idiomas            </button>
+          </div>              
+        </div>
+    </nav>
+
+    <!-- barra de navegaci�n -->
+    <div id="navegador">
+      <div class="container-fluid visible-xs">
+        <div class="collapse navbar-collapse" id="navegador-collapse">
+        
+         <ul class="nav navbar-nav"> 
+                    <li><a href="/index.php?id_idioma=1"  class="btn btn-default">Español</a></li>
+                    <li><a href="/index.php?id_idioma=2"  class="btn btn-default">Catalán</a></li>
+           </ul>
+         
+        </div>
+      </div> 
+    
+             
+      <div class="hidden-xs container-fluid text-center">
+      <h4 style="color:#fff">ARES - ECOMITIA</h4>
+      </div>                     
+    </div>
+    <!-- fin de la barra de navegaci�n-->
+</header>        
+        <div id="votacion-wrapper"  style="padding-bottom:30px">        
+        <div class="container-fluid"  style="min-height:200px">
+        
+        <h1 class="page-header"><i class="fa fa-users"></i> Plataforma de voto electrónico</h1>
+		   
+        
+           
+	   
+	   
+       <div class="row" id="divaccesocheckvoto">
+            <div class="col-sm-6">
+            <form id="formcheckvoto" name="formcheckvoto">
+                        <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.</h4>
+            <input name="vo_idvotacion" id="vo_idvotacioncheck" type="hidden" value="1">
+                     
+            <div class="form-group input-group">
+            <span class="input-group-addon"><i class="fa fa-user"></i></span>
+            <input type="text" class="form-control" placeholder="NIF / NIE" name="nif" id="nifcheck">
+            </div>
+            <div class="form-group input-group">
+            <span class="input-group-addon"><i class="fa fa-chain"></i></span>
+            <input type="text" class="form-control" placeholder="Código de verificación" name="vop_hashvoto" id="vop_hashvoto">
+            </div>
+            <div style="margin-bottom:10px;text-align:center">
+            <button type="button" class="btn btn-primary fa fa-check" id="bttnaverificarvoto"> Verificar voto</button>
+            </div>
+            </form>            
+            </div>
+            <div class="col-sm-6">
+            <div class="panel panel-success">            
+                <div class="panel-heading">
+                <h3 class="panel-title"><i class="fa fa-info"></i> Verificar voto</h3>
+                </div>
+                <div class="panel-body" id="divverificacerti"><p>Al confirmar su voto, éste es encriptado y depositado en la urna electrónica; <strong>se genera un certificado</strong> en formato pdf firmado digitalmente y se añade un sello de tiempo.</p><p>El certificado pdf <strong>incluye un código de validación </strong> que se obtiene aplicando un algoritmo matemático (hash) a la cadena de texto encriptada generada a partir del voto emitido.</p><p><strong>El proceso de comprobación del voto emitido</strong>, comparará el valor almacendo en el certificado pdf emitido en el momento del voto, con el cálculo del identificador único a partir del voto encriptado almacenado digitalmente en la urna.</p></div>
+            </div>
+            </div>
+            </div>
+       
+       
+       
+	   
+	   
+	   			
+		
+          </div>
+          
+          
+        </div>
+        
+        
+        <footer id="pie_pagina">
+          <div>
+            <div class="address">
+                <strong>Col·legi d'Enginyers Graduats i Enginyers Tècnics Industrials de Barcelona</strong><br>
+                Consell de Cent, 365 - 08009 Barcelona<br>
+                Tel: 934 96 14 20 - Fax: 932 15 20 81 - <a href="mailto:ebcn@ebcn.cat">ebcn@ebcn.cat</a><br>
+               <a href="http://maps.google.com/maps?f=q&q=Consell+de+Cent,+365,+Barcelona,++08009&ie=UTF8&om=1&z=16&iwloc=addr" target="_blank">Mapa de situación</a> |  <a href="http://www.enginyersbcn.cat/contacte/index.html?subject=Contacte?subject=" target="_blank">Contacto</a><br>
+               &copy; Col·legi d’Enginyers Graduats i Enginyers Tècnics Industrials de Barcelona<br>
+               Tots els drets reservats - <a href="http://www.enginyersbcn.cat/avis-legal.html" accesskey="8">Avís Legal</a> - <a href="http://www.enginyersbcn.cat/accessibilitat.html" accesskey="0">Accessibilitat</a> - <a href="http://www.enginyersbcn.cat/informacio-cookies.html" accesskey="0">Cookies</a>            
+            </div>
+
+
+            
+            <div class="social">              
+              <p>També ens trobareu a:</p>
+              <ul class="list-inline">
+                <li><a href="http://www.facebook.com/pages/ENGINYERS-BCN/264078597057433" rel="external" target="_blank" class="external"><img src="https://votacio.xarxatreball.cat/assets/img/logo_facebook.png"></a></li>
+                <li ><a href="http://www.twitter.com/enginyersbcn" rel="external" target="_blank" class="external"><img src="https://votacio.xarxatreball.cat/assets/img/logo_twitter.png"></a></li>
+                <li><a href="http://www.linkedin.com/company/2955670?trk=tyah" rel="external" target="_blank" class="external"><img src="https://votacio.xarxatreball.cat/assets/img/logo_linkedin.png"></a></li>
+                <li><a href="http://www.youtube.com/user/enginyersbcn" rel="external" target="_blank" class="external"><img src="https://votacio.xarxatreball.cat/assets/img/logo_youtube.png"></a></li>
+              </ul>              
+            </div>
+
+            <div class="certificados">
+               <div class="col-xs-6">
+                 <a href="http://www.enginyersbcn.cat/colegi/sistema_integrat_gestio.html">
+                  <img class="img-responsive  center-block" src="https://votacio.xarxatreball.cat/assets/img/logo_tuv.jpg" alt="Certificado TÜV" title="Certificado TÜV">
+                </a>
+              </div>
+
+               <div class="col-xs-6">
+                 <a href="http://www.enginyer2sbcn.cat/colegi/any_enginyeria_4.0/">
+                  <img class="img-responsive  center-block" src="https://votacio.xarxatreball.cat/assets/img/logo_2018_any_enginyeria.jpg" title="2018, Any de l'Enginyeria 4.0">
+                </a>
+               </div>              
+            </div>
+          </div>
+        </footer>        
+    </div>
+    <script src="js/index.js"></script>
+
+
+</body>
+
+</html>
